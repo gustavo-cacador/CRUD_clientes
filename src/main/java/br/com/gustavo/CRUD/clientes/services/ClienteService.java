@@ -33,6 +33,7 @@ public class ClienteService {
     public Page<ClienteDTO> buscarTodos(Pageable pageable) {
         Page<Cliente> result = clienteRepository.findAll(pageable);
         return result.map(x -> new ClienteDTO(x));
+        // return clientes.map(ClienteDTO::new);
     }
 
     @Transactional
