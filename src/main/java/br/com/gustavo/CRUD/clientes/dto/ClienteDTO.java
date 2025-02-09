@@ -12,15 +12,14 @@ public class ClienteDTO {
 
     private Long id;
 
-    @Size(min = 3, max = 80, message = "Nome precisa ter entre 3 e 80 caracteres.")
+    @Size(min = 3, max = 80, message = "Nome não pode ser vazio.")
     @NotBlank(message = "Campo requerido")
     private String nome;
 
-    @Size(min = 11, max = 11, message = "CPF precisa ter 11 caracteres.")
+    @Size(min = 11, max = 11, message = "CPF precisa ter 11 caracteres.") // adicionei pq achei interessante
     @NotBlank(message = "Campo requerido")
     private String cpf;
 
-    @Positive(message = "A renda precisa ser positiva.")
     private Double renda;
 
     @PastOrPresent(message = "A data de nascimento não pode estar no futuro.")
