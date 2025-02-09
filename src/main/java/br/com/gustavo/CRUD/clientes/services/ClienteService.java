@@ -14,8 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.lang.module.ResolutionException;
-
 @Service
 public class ClienteService {
 
@@ -25,7 +23,7 @@ public class ClienteService {
     @Transactional(readOnly = true)
     public ClienteDTO procurarPorId(Long id) {
         Cliente cliente = clienteRepository.findById(id).orElseThrow(
-                () -> new ResolutionException("Cliente inexistente."));
+                () -> new ResourceNotFoundException("Cliente inexistente."));
         return new ClienteDTO(cliente);
     }
 
