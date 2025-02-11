@@ -3,6 +3,7 @@ package br.com.gustavo.CRUD.clientes.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Entity
 @Table(name = "tb_clientes")
@@ -28,6 +29,18 @@ public class Cliente {
         this.renda = renda;
         this.dataNascimento = dataNascimento;
         this.filhos = filhos;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Cliente cliente = (Cliente) o;
+        return Objects.equals(id, cliente.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 
     public Long getId() {
