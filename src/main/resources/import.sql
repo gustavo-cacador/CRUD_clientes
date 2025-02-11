@@ -1,0 +1,10 @@
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Gustavo Caçador', '12345678901', '2100.0', '2001-01-09', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('João Almeida', '12345678902', '2200.0', '2001-01-08', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Gabriel Carvalho', '12345678903', '2300.0', '2001-01-07', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Miguel Pinto', '12345678904', '2400.0', '2001-01-06', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Victor Ferreira', '12345678905', '2500.0', '2001-01-05', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Bruno Garone', '12345678906', '2600.0', '2001-01-04', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Vinicius Pacheco', '12345678907', '2700.0', '2001-01-03', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Luã Toschi', '12345678908', '2800.0', '2001-01-02', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('André Fernandes', '12345678909', '2900.0', '2001-01-01', 0);
+INSERT INTO tb_clientes (nome, cpf, renda, data_nascimento, filhos) VALUES ('Kelvin de Silva', '12345678910', '21000.0', '2001-01-10', 0);
